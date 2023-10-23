@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Exhibition Webpage</title>
+    <style>
+        h4{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+            padding-bottom:0;
+        }
+
+        p{
+            text-align: center;
+            padding-bottom: 20px;
+            padding-top: 0;
+        }
+
+        p.desc{
+            text-align: justify;
+        }
+
+        div{
+            position: absolute;
+            left: 40%;
+            width: 390px;
+
+        }
+
+        img{
+            width: 400px;
+            aspect-ratio: 16/9;
+            border-radius: 30px;
+            transition: 0.15s;
+        }
+        img:hover{
+            box-shadow: 2px 2px grey;
+        }
+    </style>
+</head>
+<body background="">
+    
+        <div>
+            <h4 class="team-name-p">
+                TEAM
+            </h4>
+            <p>
+                {{team_name}}
+            </p>
+            <h4 class="members-p">
+                MEMBERS
+            </h4>
+            <p>
+                {{team_member}}
+            </p>
+            <img src={{image}} class="img-1">
+            <h4 class="members-p">
+                PROJECT DESCRIPTION
+            </h4>
+            <p class="desc">
+                {{desc}}
+            </p>
+            
+        </div>
+            
+
+    </div>
+
+    
+    
+</body>
+</html>
