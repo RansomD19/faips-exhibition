@@ -12,10 +12,10 @@ def index():
     fav = [1, 2, 3, 4, 4]
     return render_template("index.html", stuff=stuff, faviii=fav)
 
-@app.route("/user/<name>")
+@app.route("/content/<id>")
 
-def user(name):
-    return render_template("user.html", name=name)
+def content(id):
+    return render_template("content.html", id=id)
 
 
 #create a custom error pages
