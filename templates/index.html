@@ -19,25 +19,29 @@
         <div>
             <img src="{{url_for('static', filename='img/faips-icon.png')}}" class="logo" >
 
-            
+
         </div>
-        
+
     </div>
 
     <div class="dropdown">
-        <button>Projects</button>
+        <button>Select Project</button>
         <div class="dropdown-options">
-            {% for i in range(1, 11) %}
+            {% for i in range(1, 200) %}
                 <a href="content/{{i}}">{{i}}</a>
             {% endfor %}
 
-          
+
         </div>
       </div>
-      
+
 
     {% endblock %}
-    
+    <div class="large">
+        <img src="{{url_for('static', filename='img/qr-code.png')}}" alt="qr code" style="width:250px;height:250px">
+        <p>Heres a Qrcode!<br> This website works best on a mobile phone:D</p>
+    </div>
+
 </body>
 
 <footer>

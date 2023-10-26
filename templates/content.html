@@ -1,18 +1,19 @@
+{% extends "index.html" %}
 {% block content %}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
 <style>
  body{
-            background: rgb(255,194,0);
-    background: linear-gradient(41deg, rgba(255,194,0,1) 10%, rgba(85,124,9,0.7861345221682423) 59%);  
-    padding-top: 100px;
+ background: rgb(255,194,0);
+background: linear-gradient(76deg, rgba(255,194,0,1) 42%, rgba(85,124,9,0.7861345221682423) 78%);
         }
         h4{
             font-family: 'Orbitron', sans-serif;
             text-align: center;
             padding-bottom:0;
             color:antiquewhite;
+            text-size: 10px;
         }
 
         p{
@@ -45,7 +46,7 @@
         }
         img:hover{
             box-shadow: 2px 2px 2px grey;
-        } 
+        }
 
         footer{
     padding-top:200px;
@@ -53,24 +54,28 @@
     text-decoration: blanchedalmond;
   }
   .logo{
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
+
 
     /* Center vertically and horizontally */
     position: relative;
   }
+  .logostyle{
+       display: flex;
+justify-content:center;
+
+  }
 
 </style>
 <div class="container">
-    <div>
+    <div class="logostyle">
         <img src="{{url_for('static', filename='img/faips-icon.png')}}" class="logo" >
 
-        
+
     </div>
-    <div>
-        <a href="/"><< Go Back</a>
-    </div>
-    
+
+
 </div>
 <div class="content">
     <h4 class="team-name-p">
@@ -86,21 +91,21 @@
         {{team_member}}
     </p>
     <img src="https://drive.google.com/uc?export=view&id=13O8yLAgKxRBWGn0Lzt9qO9o8Mgalrskk" class="img-1">
-    
+
     <h4 class="members-p">
         PROJECT DESCRIPTION
     </h4>
     <p class="desc">
         {{desc}}
     </p>
-    
-</div>
-    
+
+    <h4>
+        <a href="/"><< Go Back</a>
+    </h4>
 
 </div>
 
-<footer>
-    <p>Author: Daniel Gigi & Jasim Gul Shah</p>
-    <p><a href="mailto:danielgg.george@gmail.com">How was the website?</a></p>
-  </footer>
+
+</div>
+
 {% endblock %}

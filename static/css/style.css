@@ -1,103 +1,141 @@
 body{
-    background: rgb(255,194,0);
-    background: linear-gradient(41deg, rgba(255,194,0,1) 10%, rgba(85,124,9,0.7861345221682423) 59%);  
-    padding-bottom:500px;
-}
-.container {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 45px;
-    margin: 30px;
-    width: 350px;
-    height: 200px;
-    /* outline: dashed 1px black; */
-    /* Setup */
-    position: relative;
-    text-align:center;
-
-    padding-top:70px;
-  }
-  
-  .logo {
-    width: 250px;
-    height: 250px;
-
-    /* Center vertically and horizontally */
-    position: relative;
-    top:50px;
-    margin: -25px 0 0 -25px; /* Apply negative top and left margins to truly center the element */
-  }
-
-  .dropdown {
-    margin-top:250px;
-    margin-left:125px;
-    display: inline-block;
-    position: relative;
-    background-color: #fed9ff;
-    
-  }
-  .dropdown-options {
-    display: none;
-    position: relative;
-    overflow: auto;
-    width: 100px;
-    height: 150px;
-    overflow-x: hidden;
-    overflow-y: auto;
-    text-align: center;
-    padding: 10px;
-  }
-  
-  .dropdown:hover .dropdown-options {
-    display: block;
-  }
-
-  button{
-    border:none;
-    border-radius:5px;
-    border-color: #0a0a23;
-    padding:7px 30px;
-    font-size:18px;
-    cursor:pointer;
-  }
-  
-  button:hover{
-    background-color:#ddd;
-  }
-  
-  .dropdown-options {
-    display: none;
-    position: absolute;
-    overflow: auto;
-    background-color:#fff;
-    border-radius:5px;
-    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
-  }
-  
-  .dropdown:hover .dropdown-options {
-    display: block;
-  }
-  
-  .dropdown-options a {
-
-    display: block;
-    color: #000000;
-    padding: 10px;
-    text-decoration: none;
-    
-  }
-  
-  .dropdown-options a:hover {
-    color: #0a0a23;
-    background-color: #ddd;
-    border-radius:5px;
-  }    
-
-
-  footer{
-    padding-top:200px;
-    text-align:center;
-    text-decoration: blanchedalmond;
-  }
-
-
-  /* Projcet Contents */
+  background: rgb(255,194,0);
+ background: linear-gradient(76deg, rgba(255,194,0,1) 42%, rgba(85,124,9,0.7861345221682423) 78%);
+     padding-bottom:200px;
+ }
+ .container {
+     font-family: 'Orbitron', sans-serif;
+     font-size: 25px;
+     margin: 20px;
+     width: 320px;
+     height: 200px;
+     /* outline: dashed 1px black; */
+     /* Setup */
+     position: relative;
+     text-align:center;
+ 
+     padding-top:20px;
+   }
+ 
+   .logo {
+     width: 250px;
+     height: 250px;
+ 
+     /* Center vertically and horizontally */
+     position: relative;
+     top:50px;
+     left:10px;
+     margin: -25px 0 0 -25px; /* Apply negative top and left margins to truly center the element */
+   }
+ 
+   .dropdown {
+     margin-top:170px;
+     margin-left:70px;
+     display: inline-block;
+     position: relative;
+ 
+   }
+   .dropdown-options {
+     display: none;
+     position: relative;
+     overflow: auto;
+     width: 100px;
+     height: 150px;
+     overflow-x: hidden;
+     overflow-y: auto;
+     text-align: center;
+     padding: 10px;
+   }
+ 
+   .dropdown:hover .dropdown-options {
+     display: block;
+   }
+ 
+   button{
+     background-color: aliceblue;
+     border:none;
+     border-radius:10px;
+ 
+     padding:10px 30px;
+     font-size:18px;
+     cursor:pointer;
+     font-weight: bolder;
+     font-family: 'Orbitron', sans-serif;
+     border: 2px solid #0dff05bb;
+     color:#CE4810;
+   }
+ 
+   button:hover{
+     background-color:#E3FE1C;
+   }
+ 
+   .dropdown-options {
+     display: none;
+     position: absolute;
+     overflow: auto;
+     background-color:#7dc707;
+     border-radius:5px;
+     box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+   }
+ 
+   .dropdown:hover .dropdown-options {
+     display: block;
+   }
+ 
+   .dropdown-options a {
+ 
+     display: block;
+     color: #000000;
+     padding: 10px;
+     text-decoration: none;
+ 
+   }
+ 
+   .dropdown-options a:hover {
+     color: #0a0a23;
+     background-color: #ddd;
+     border-radius:5px;
+   }
+ 
+ 
+   footer{
+     padding-top:200px;
+     text-align:center;
+     text-decoration: blanchedalmond;
+   }
+ 
+ 
+   /* Projcet Contents */
+ 
+    /* Projcet Contents */
+ 
+ /* Media query for screens with a minimum width of 768px (adjust as needed) */
+ @media (min-width:1000px) {
+ 
+   .container {
+     display: none;
+   }
+   .dropdown{
+     display:none;
+   }
+ 
+   .large {
+     position:absolute;
+     display: flex;
+     justify-content: center;
+     font-size: 30px;
+     text-align:center;
+ }
+ p{
+   text-align: center;
+ }
+ }
+ @media (max-width: 850px) {
+ 
+ 
+   .large {
+     display: none;
+   }
+ }
+ 
+ 
