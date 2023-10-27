@@ -1,0 +1,110 @@
+{% extends "index.html" %}
+{% block content %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+<style>
+ body{
+ background: rgb(255,194,0);
+background: linear-gradient(76deg, rgba(255,194,0,1) 42%, rgba(85,124,9,0.7861345221682423) 78%);
+        }
+        h4{
+            font-family: 'Orbitron', sans-serif;
+            text-align: center;
+            padding-bottom:0;
+            color:antiquewhite;
+            }
+
+        p{
+            text-align: center;
+            padding-bottom: 20px;
+            padding-top: 0;
+            padding-left:20px;
+            padding-right:20px;
+            font-weight:bolder;
+        }
+
+        p.desc{
+            text-align: justify;
+        }
+
+        div.main-div{
+            margin:auto;
+            right: 50%;
+            left: 50%;
+            width: 400px;
+        }
+
+        img{
+            width: 350px;
+            aspect-ratio: 16/9;
+            display: block;
+            margin: auto;
+            border-radius: 30px;
+            transition: 0.15s;
+        }
+        img:hover{
+            box-shadow: 2px 2px 2px grey;
+        }
+
+        footer{
+    padding-top:200px;
+    text-align:center;
+    text-decoration: blanchedalmond;
+  }
+  .logo{
+    width: 150px;
+    height: 150px;
+
+
+    /* Center vertically and horizontally */
+    position: relative;
+  }
+  .logostyle{
+       display: flex;
+justify-content:center;
+
+  }
+
+</style>
+<div class="container">
+    <div class="logostyle">
+        <img src="{{url_for('static', filename='img/faips-icon.png')}}" class="logo" >
+
+
+    </div>
+
+
+</div>
+<div class="content">
+    <h4 class="team-name-p">
+        TEAM
+    </h4>
+    <p>
+        {{team_name}}
+    </p>
+    <h4 class="members-p">
+        MEMBERS
+    </h4>
+    <p>
+        {{team_member}}
+    </p>
+    <img src="https://drive.google.com/uc?export=view&id=13O8yLAgKxRBWGn0Lzt9qO9o8Mgalrskk" class="img-1">
+
+    <h4 class="members-p">
+        PROJECT DESCRIPTION
+    </h4>
+    <p class="desc">
+        {{desc}}
+    </p>
+
+    <h4>
+        <a href="/"><< Go Back</a>
+    </h4>
+
+</div>
+
+
+</div>
+
+{% endblock %}

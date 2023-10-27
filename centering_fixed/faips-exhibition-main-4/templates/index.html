@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAIPS-DPS</title>
+    <!-- Or cSs1 -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+
+    <!-- FOnts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+<body>
+    {% block content %}
+    <div class="main-content">
+        <div class="major-container">
+            <div class="container">
+                <strong>Faips Science Exhibition</strong><br>2023-24
+                <div>
+                    <img src="{{url_for('static', filename='img/faips-icon.png')}}" class="logo" >
+
+
+                </div>
+
+            </div>
+
+            <div class="dropdown">
+                <button>Select Project</button>
+                <div class="dropdown-options">
+                    {% for i in range(1, num|length+1) %}
+                        <a href="content/{{i}}">{{i}}</a>
+                    {% endfor %}
+
+
+                </div>
+            </div>
+        </div>
+
+
+        {% endblock %}
+        <div class="large">
+            <img src="{{url_for('static', filename='img/qr-code.png')}}" alt="qr code" style="width:250px;height:250px">
+            <p>Heres a Qrcode!<br> This website works best on a mobile phone :D</p>
+        </div>
+    </div>
+    <footer>
+        <p>Author: Daniel Gigi & Jasim Gul Shah</p>
+        <p><a href="mailto:danielgg.george@gmail.com">How was the website?</a></p>
+      </footer>
+</body>
+
+
+</html>
+
