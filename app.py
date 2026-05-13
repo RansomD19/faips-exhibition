@@ -19,7 +19,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return render_template("index.html", num=team_members)
+    return render_template("index.html", num=team_members, names=team_names)
 
 
 @app.route("/content/<id>")

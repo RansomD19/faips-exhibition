@@ -28,7 +28,7 @@
         <button>Select Project</button>
         <div class="dropdown-options">
             {% for i in range(1, num|length+1) %}
-                <a href="content/{{i}}">{{i}}</a>
+                <a href="content/{{i}}">{{i}}-{{names[i-1]}}</a>
             {% endfor %}
 
 
